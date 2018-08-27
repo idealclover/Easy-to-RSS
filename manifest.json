@@ -1,0 +1,25 @@
+{
+    "manifest_version": 2,
+    "name": "Easy to RSS",
+    "description": "Retreive RSS feeds URLs from WebSite, RSSHub supported",
+    "version": "0.0.1",
+    "author": "@idealclover",
+    "homepage_url": "https://github.com/idealclover/Easy-to-RSS",
+    "permissions": [
+        "http://*/*",
+        "https://*/*",
+        "tabs",
+        "activeTab"
+    ],
+    "browser_action": {
+        "default_icon" : "img/icon_default.png",
+        "default_popup": "popup.html",
+        "default_title": "Click to view RSS feeds for this page"
+    },
+    "background": {
+        "scripts": ["js/background.js"]
+    },
+    "icons": {
+        "128" : "img/icon_128.png"
+    }
+}
