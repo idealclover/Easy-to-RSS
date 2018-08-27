@@ -10,13 +10,13 @@ Easy-to-RSS 是一个一键式发现当前网页RSS的 chrome extension，~~计�
 
 Example website: https://blog.idealclover.top
 
-![](./demo-origin.png)
+![demo-origin.png](./demo-origin.png)
 
 **同时** 如果该网站被[RSSHub](https://github.com/DIYgod/RSSHub)收录，Easy-to-RSS将获取该网站在RSSHub中的地址：
 
 Example website: http://news.cctv.com/tech/index.shtml
 
-![](./demo-rsshub.png)
+![demo-rsshub.png](./demo-rsshub.png)
 
 ## How to Use
 
