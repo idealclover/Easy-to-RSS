@@ -42,6 +42,6 @@ Example website: http://news.cctv.com/tech/index.shtml
 
 This project is under MIT license, feel free to use it under the license.
 
-Also this project is based on [route-recognizer](https://github.com/tildeio/route-recognizer), and thanks to [RSSHub](https://github.com/DIYgod/RSSHub).
+Also this project is based on [get-rss-feed-url-extension](https://github.com/shevabam/get-rss-feed-url-extension) and [route-recognizer](https://github.com/tildeio/route-recognizer), and thanks to [RSSHub](https://github.com/DIYgod/RSSHub).
 
 Long live RSS.
