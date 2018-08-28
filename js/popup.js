@@ -2,20 +2,25 @@ var root = 'https://rsshub.app';
 
 function searchRSSHub(url, callback) {
     var feeds = [];
+
+    //for every domain in the data json
     for (var key in data) {
+
+        //extract root url
         var regex = new RegExp(key + '(\\S*)');
         var path = url.match(regex);
         if (path === null) {
             continue;
         }
-        console.log(path);
         path = path[1];
-        var results = [];
 
+        var results = [];
         var router = {};
-        for (var src in data[key]) {
+        //for every pattern in the domain
+        for(var j = 0;j < data[key].length; j++){
             router = new RouteRecognizer();
-            router.add([{path: src, handler: data[key][src]}]);
+            //router.add([{path: ptn["src"], handler: [ptn["dst"], ptn["name"]]}]);
+            router.add([{path: data[key][j]["src"], handler: [data[key][j]["dst"], data[key][j]["name"]]}]);
             var result = router.recognize(path);
             console.log(result);
             if (result) {
@@ -25,18 +30,20 @@ function searchRSSHub(url, callback) {
             router = {};
         }
 
-        console.log(results);
-
         for (var i = 0; i < results.length; i++) {
-            var rst = results[i].handler;
+            var rst = results[i].handler[0];
+            var title = results[i].handler[1];
             for (var param in results[i].params) {
                 rst = rst.replace(':' + param, results[i].params[param]);
+                if(title){
+                    title = title.replace(':' + param, results[i].params[param]);
+                }
             }
             var feed_url = (root + rst);
             var feed = {
                 type: '',
                 url: feed_url,
-                title: 'RSSHub: ' + feed_url
+                title: 'RSSHub: ' + (title || feed_url)
             };
             feeds.push(feed);
         }
