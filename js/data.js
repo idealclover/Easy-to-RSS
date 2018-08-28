@@ -6,21 +6,22 @@ var data = {
             "dst": "/3dm/news"
         },
         {
-            "name": "3dm游戏新闻",
+            "name": ":name的游戏新闻",
             "src": "/games/:name/news",
             "dst": "/3dm/:name/news"
         },
         {
-            "name": "3dm游戏攻略",
+            "name": ":name的游戏攻略",
             "src": "/games/:name/gl",
             "dst": "/3dm/:name/gl"
         },
         {
-            "name": "3dm游戏资源",
+            "name": ":name的游戏资源",
             "src": "/games/:name/resource",
             "dst": "/3dm/:name/resource"
         }
-    ]
+    ],
+
     // "www.3dmgame.com": {
     //     "/news": "/3dm/news",
     //     "/games/:name/news": "/3dm/:name/news",

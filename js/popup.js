@@ -1,11 +1,16 @@
 var root = 'https://rsshub.app';
 
+/**
+ * @author idealclover
+ * @param {string} url the url needs to be compared
+ * @param {function} callback giveback the rss list found in RSSHub
+ */
 function searchRSSHub(url, callback) {
     var feeds = [];
 
-    //for every domain in the data json
+    // For every domain in the data json, extract compare url and output.
+    // The data json is in data.js and format is like the following.
     for (var key in data) {
-
         //extract root url
         var regex = new RegExp(key + '(\\S*)');
         var path = url.match(regex);
@@ -16,26 +21,28 @@ function searchRSSHub(url, callback) {
 
         var results = [];
         var router = {};
-        //for every pattern in the domain
-        for(var j = 0;j < data[key].length; j++){
+        // For every pattern in the domain, compare it with the given url.
+        for (var j = 0; j < data[key].length; j++) {
+            // Because for muti url, router-recognizer only return 1 best, the RouteRecognizer should be init in every loop.
             router = new RouteRecognizer();
-            //router.add([{path: ptn["src"], handler: [ptn["dst"], ptn["name"]]}]);
+            // The handler contains the rest information for the rest process.
             router.add([{path: data[key][j]["src"], handler: [data[key][j]["dst"], data[key][j]["name"]]}]);
             var result = router.recognize(path);
-            console.log(result);
             if (result) {
-                console.log(result);
                 results.push(result[0]);
             }
             router = {};
         }
 
+        //for every result, format it into a list
         for (var i = 0; i < results.length; i++) {
             var rst = results[i].handler[0];
             var title = results[i].handler[1];
             for (var param in results[i].params) {
+                // link every param in the pattern with the result
                 rst = rst.replace(':' + param, results[i].params[param]);
-                if(title){
+                if (title) {
+                    // if title has some params, link them
                     title = title.replace(':' + param, results[i].params[param]);
                 }
             }
