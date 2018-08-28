@@ -18,6 +18,15 @@ Example website: http://news.cctv.com/tech/index.shtml
 
 ![demo-rsshub.png](./demo-rsshub.png)
 
+当前支持一键[RSSHub](https://github.com/DIYgod/RSSHub)订阅的网站：
+
+* 3dm game: 完全支持
+* Bilibili: 用户投币视频，用户收藏夹
+* GitHub: issues
+* 简书: 完全支持
+* 知乎：完全支持
+* 微博：完全支持
+
 ## How to Use
 
 > 项目还出于demo开发阶段，especially 对RSSHub的支持还有bug ，请给 ~~没学过web开发并且学业繁忙甚至不是计算机专业的~~ 作者一点时间！
