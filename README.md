@@ -42,6 +42,8 @@ Example website: http://news.cctv.com/tech/index.shtml
 
 **Examples:**
 
+> Tips: Github语法不支持在新标签页打开链接，建议以下示例链接使用 **ctrl**  + click 的方式，在新标签页内打开链接
+
 安装成功后，是不是急切地想体验一键RSS的感觉啦！以下这些**RSSHub生成**的网站也许适合你哦~
 
 * Bilibili: [用户投币视频](https://space.bilibili.com/5044093/#/) [用户收藏夹](https://space.bilibili.com/5044093/#/)
@@ -52,6 +54,7 @@ Example website: http://news.cctv.com/tech/index.shtml
 * Github: [Issues](https://github.com/idealclover/Easy-to-RSS/issues)
 
 **此外**，还有这样一些良心的网站自己提供了RSS，也可以尝试~
+
 ~~我才不会说当年在RSSHub上提了不知道多少自带RSS源的愚蠢Issues~~
 
 * ~~为女朋友特意加进来的~~ Lofter: [博主主页](http://idealclover.lofter.com/)
@@ -71,7 +74,7 @@ Example website: http://news.cctv.com/tech/index.shtml
 
 如果有任何想法或需求，可以在 [issue](https://github.com/idealclover/Easy-to-RSS/issues) 中告诉我们，同时我们欢迎各种 pull requests
 
-目前最主要的工作是及时更新 js/popup.js 中的router数据。
+目前最主要的工作是及时更新 [js/data.js](https://github.com/idealclover/Easy-to-RSS/blob/master/js/data.js) 中的router数据。
 
 ## Open-source Licenses
 
