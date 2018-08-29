@@ -43,6 +43,25 @@ var data = {
         }
     ],
 
+    //即刻
+    "web.okjike.com": [
+        {
+            "name": "主题精选RSS",
+            "src": "/topic/:id/official",
+            "dst": "/jike/topic/:id"
+        },
+        {
+            "name": "主题广场RSS",
+            "src": "/topic/:id/user",
+            "dst": "/jike/topic/:id"
+        },
+        {
+            "name": "用户动态RSS",
+            "src": "/user/:id/post",
+            "dst": "/jike/user/:id"
+        }
+    ],
+
     //简书
     "www.jianshu.com": [
         {

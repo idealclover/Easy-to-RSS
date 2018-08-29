@@ -26,6 +26,7 @@ Example website: http://news.cctv.com/tech/index.shtml
 * 知乎：完全支持
 * 微博：完全支持
 * GitHub: issues
+* 即刻：完全支持（尚未同步至Release）
 
 ## How to Use
 
