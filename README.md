@@ -31,7 +31,14 @@ Example website: http://news.cctv.com/tech/index.shtml
 
 > 项目还出于demo开发阶段，especially 对RSSHub的支持还有bug ，请给 ~~没学过web开发并且学业繁忙甚至不是计算机专业的~~ 作者一点时间！
 
-目前该扩展尚未在 chrome store 上架，需要下载并打包为.ctx格式。
+目前该扩展的pre-release版本**已**在 chrome store 上架（但是现在好像还搜索不到XD）。
+
+**食用方法：**
+
+1. 在[release](https://github.com/idealclover/Easy-to-RSS/releases)页面下载*Easy-to-RSS.ctx*文件
+2. 转到chrome右上角的*更多工具-扩展程序*
+3. 将下载的.ctx文件拖入浏览器，提示安装并点击确定
+4. Finished! 开启轻松的RSS之旅吧！
 
 ## Planned Features
 
