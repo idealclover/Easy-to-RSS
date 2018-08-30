@@ -62,6 +62,15 @@ var data = {
         }
     ],
 
+    //微信公众号（瓦斯）
+    "wx.qnmlgb.tech": [
+        {
+            "name": "公众号RSS",
+            "src": "/authors/:id",
+            "dst": "/wechat/wasi/:id"
+        }
+    ],
+
     //简书
     "www.jianshu.com": [
         {
