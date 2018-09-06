@@ -130,6 +130,7 @@ function render(msg) {
 function addFeeds(feeds, html, count, callback) {
     for (var i = 0; i < feeds.length; i++) {
         html += '<li><a href="' + feeds[i].url + '" title="' + feeds[i].type + '" target="_blank">' + feeds[i].title + '</a></li>';
+        // html += '<li><a href="' + feeds[i].url + '" title="' + feeds[i].type + '" target="_blank">' + feeds[i].title + '</a><input type="text" value="' + feeds[i].url + '" id="feed"' + i + '><button>Copy</button></li>';
     }
 
     count--;
@@ -138,12 +139,27 @@ function addFeeds(feeds, html, count, callback) {
         if (html === '') {
             render("No feeds found");
         } else {
-            render('<ul>' + html + '</ul>');
+            render('<ul id="feeds">' + html + '</ul>');
         }
     }
 
     callback(count, html);
 }
+
+// window.onload = function(){
+//     var list = document.getElementById("feeds");
+//     list.addEventListener("click",function(event){
+//         console.log(event.target.nodeName);
+//         if(event.target.nodeName !== "BUTTON"){
+//             return;
+//         }
+//         console.log(event.target.previousSibling.href);
+//         var copyText = event.target.previousSibling.getAttribute('href');
+//         copyText.select();
+//         document.execCommand("copy");
+//         //alert("Copied the text: " + copyText.value);
+//     });
+// }
 
 document.addEventListener('DOMContentLoaded', function () {
     chrome.tabs.query({active: true, currentWindow: true}, function (tabs) {
