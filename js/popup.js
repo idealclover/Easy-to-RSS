@@ -1,4 +1,11 @@
 var root = 'https://rsshub.app';
+chrome.storage.local.get("serveraddress", function(rst) {
+    if(rst["serveraddress"] !== undefined){
+        root = rst["serveraddress"];
+    }
+});
+
+// var root = result || 'https://rsshub.app';
 
 /**
  * @author idealclover
@@ -146,20 +153,23 @@ function addFeeds(feeds, html, count, callback) {
     callback(count, html);
 }
 
-// window.onload = function(){
-//     var list = document.getElementById("feeds");
-//     list.addEventListener("click",function(event){
-//         console.log(event.target.nodeName);
-//         if(event.target.nodeName !== "BUTTON"){
-//             return;
-//         }
-//         console.log(event.target.previousSibling.href);
-//         var copyText = event.target.previousSibling.getAttribute('href');
-//         copyText.select();
-//         document.execCommand("copy");
-//         //alert("Copied the text: " + copyText.value);
-//     });
-// }
+window.onload = function(){
+    var list = document.getElementById("feeds");
+    list.addEventListener("click",function(event){
+        console.log(event.target.nodeName);
+        if(event.target.nodeName !== "A"){
+            return;
+        }
+        const input = document.createElement('input');
+        document.body.appendChild(input);
+        console.log(event.target.href);
+        input.setAttribute('value', event.target.href);
+        input.select();
+        document.execCommand("copy");
+        document.body.removeChild(input);
+        alert("Copied to clipboard.");
+    });
+}
 
 document.addEventListener('DOMContentLoaded', function () {
     chrome.tabs.query({active: true, currentWindow: true}, function (tabs) {

@@ -8,15 +8,19 @@
     "permissions": [
         "http://*/*",
         "https://*/*",
-        "tabs",
+        "clipboardWrite",
         "activeTab",
         "storage",
-        "clipboardWrite"
+        "tabs"
     ],
     "browser_action": {
         "default_icon" : "img/icon_default.png",
         "default_popup": "popup.html",
         "default_title": "Click to view RSS feeds for this page"
+    },
+    "options_ui": {
+        "page": "options.html",
+        "open_in_tab": false
     },
     "background": {
         "scripts": ["js/background.js"]
