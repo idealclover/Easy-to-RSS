@@ -57,7 +57,7 @@ var data = {
         },
         {
             "name": "用户动态RSS",
-            "src": "/user/:id/post",
+            "src": "/user/:id",
             "dst": "/jike/user/:id"
         }
     ],
