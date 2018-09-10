@@ -6,17 +6,19 @@ Easy-to-RSS 是一个一键式发现当前网页RSS的 chrome extension，~~计�
 
 ## Demo
 
+功能：获取网页RSS，复制到剪贴板并打开该RSS网页。
+
 如果该网站自带RSS，Easy-to-RSS将获取该网站自带RSS：
 
 Example website: https://blog.idealclover.top
 
-![demo-origin.png](./demo-origin.png)
+![demo-origin.png](./pics/demo-origin.png)
 
 **同时** 如果该网站被[RSSHub](https://github.com/DIYgod/RSSHub)收录，Easy-to-RSS将获取该网站在RSSHub中的地址：
 
 Example website: http://news.cctv.com/tech/index.shtml
 
-![demo-rsshub.png](./demo-rsshub.png)
+![demo-rsshub.png](./pics/demo-rsshub.png)
 
 当前支持一键[RSSHub](https://github.com/DIYgod/RSSHub)订阅的网站：
 
@@ -26,20 +28,26 @@ Example website: http://news.cctv.com/tech/index.shtml
 * 知乎：完全支持
 * 微博：完全支持
 * GitHub: issues
-* 即刻：完全支持（尚未同步至Release）
-* 微信公众号（瓦斯方式）：支持（尚未同步至Release）
+* 即刻：完全支持
+* 微信公众号（瓦斯方式）：完全支持
 
 ## How to Use
 
 > 项目还出于demo开发阶段，especially 对RSSHub的支持还有bug ，请给 ~~没学过web开发并且学业繁忙甚至不是计算机专业的~~ 作者一点时间！
 
-目前该扩展的pre-release版本**已**在 chrome store 上架（但是现在好像还搜索不到XD）。
+**Chrome store**
 
-**食用方法：**
+[点击下载安装（需翻墙）](https://chrome.google.com/webstore/detail/easy-to-rss/hbcmpkcpbnecinpngdnfbnknfkdpdfli)
 
-1. 在[release](https://github.com/idealclover/Easy-to-RSS/releases)页面下载*Easy-to-RSS.ctx*文件
+或在[chrome应用商店](https://chrome.google.com/webstore)直接搜索*easy to RSS*
+
+**安装包下载安装**
+
+[v0.1.0下载](https://github.com/idealclover/Easy-to-RSS/releases/download/v0.1.0/Easy-to-RSS.crx)
+
+1. 在[release](https://github.com/idealclover/Easy-to-RSS/releases)页面下载*Easy-to-RSS.crx*文件
 2. 转到chrome右上角的*更多工具-扩展程序*
-3. 将下载的.ctx文件拖入浏览器，提示安装并点击确定
+3. 将下载的.crx文件拖入浏览器，提示安装并点击确定
 4. Finished! 开启轻松的RSS之旅吧！
 
 **Examples:**
@@ -54,6 +62,8 @@ Example website: http://news.cctv.com/tech/index.shtml
 * 知乎 [用户动态](https://www.zhihu.com/people/cuicuijiang/activities) [用户回答](https://www.zhihu.com/people/cuicuijiang/answers) [收藏夹](https://www.zhihu.com/collection/41893350) [知乎日报](https://daily.zhihu.com/)
 * 微博 [微博博主](https://www.weibo.com/u/5229305350) [搜索结果](http://s.weibo.com/weibo/%25E5%25A5%25B3%25E8%25A3%2585)
 * Github: [Issues](https://github.com/idealclover/Easy-to-RSS/issues)
+* 即刻：[主题精选](https://web.okjike.com/topic/564ab85208987312006e13ab/official) [用户动态](https://web.okjike.com/user/82D23B32-CF36-4C59-AD6F-D05E3552CBF3)
+* 微信公众号（瓦斯方式）：[公众号](https://wx.qnmlgb.tech/authors/5b575ec958e5c4583338dff7)
 
 **此外**，还有这样一些良心的网站自己提供了RSS，也可以尝试~
 
@@ -64,15 +74,26 @@ Example website: http://news.cctv.com/tech/index.shtml
 
 还有各种各样厉害的博主啦~如果他们的网站自带RSS的话，比如 [这个人](https://idealclover.top)（逃
 
+**另外**，在设置页面也可以自定义RSSHub地址。**强烈推荐自建RSSHub**，在稳定性更好的同时，避免增加RSSHub作者[DIYgod](https://github.com/DIYgod)的负担。**爱护DIYgod，人人有责**
+
+![demo-settings.png](./pics/demo-settings.png)
+
 ## Planned Features
 
-- [ ] Click to copy
+- [x] Click to copy
 - [ ] Add RSSHub routers
-- [ ] Configure RSSHub root URL
+- [x] Configure RSSHub root URL
 - [ ] Fully compatible with RSSHub
 - [ ] More routers and channels
 
 ## Contribute
+
+**调试方法：**
+
+1. Clone this repository.
+2. 转到chrome右上角的*更多工具-扩展程序*
+3. 在拓展页右上角启用开发者模式
+4. 加载已解压的扩展程序
 
 如果有任何想法或需求，可以在 [issue](https://github.com/idealclover/Easy-to-RSS/issues) 中告诉我们，同时我们欢迎各种 pull requests
 
