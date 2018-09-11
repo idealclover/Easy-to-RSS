@@ -154,6 +154,24 @@ var data = {
             "src": "/:user/:repo/issues",
             "dst": "/github/issue/:user/:repo"
         }
+    ],
+
+    //twitter
+    "twitter.com": [
+        {
+            "name": "twitter用户动态",
+            "src": "/:user",
+            "dst": "/twitter/user/:id"
+        }
+    ]
+
+    //Instagram
+    "www.instagram.com": [
+        {
+            "name": "instagram用户动态",
+            "src": "/:user",
+            "dst": "/instagram/user/:id"
+        }
     ]
 };
 
