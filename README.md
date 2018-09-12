@@ -4,6 +4,8 @@
 
 Easy-to-RSS 是一个一键式发现当前网页RSS的 chrome extension，~~计划~~与[RSSHub](https://github.com/DIYgod/RSSHub)联动并支持更多网页。
 
+[English Docs](https://github.com/idealclover/Easy-to-RSS/blob/master/README.md)
+
 ## Demo
 
 功能：获取网页RSS，复制到剪贴板并打开该RSS网页。
@@ -30,6 +32,8 @@ Example website: http://news.cctv.com/tech/index.shtml
 * GitHub: issues
 * 即刻：完全支持
 * 微信公众号（瓦斯方式）：完全支持
+* Instagram：完全支持（尚未同步至Release）
+* twitter：完全支持（尚未同步至Release）
 
 ## How to Use
 
