@@ -161,16 +161,16 @@ var data = {
         {
             "name": "twitter用户动态",
             "src": "/:user",
-            "dst": "/twitter/user/:id"
+            "dst": "/twitter/user/:user"
         }
-    ]
+    ],
 
     //Instagram
     "www.instagram.com": [
         {
             "name": "instagram用户动态",
             "src": "/:user",
-            "dst": "/instagram/user/:id"
+            "dst": "/instagram/user/:user"
         }
     ]
 };
