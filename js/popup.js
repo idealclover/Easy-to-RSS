@@ -1,11 +1,6 @@
-var root = 'https://rsshub.app';
-chrome.storage.local.get("serveraddress", function(rst) {
-    if(rst["serveraddress"] !== undefined){
-        root = rst["serveraddress"];
-    }
+chrome.storage.local.get({"serveraddress": 'https://rsshub.app'}, function(rst) {
+    root = rst["serveraddress"];
 });
-
-// var root = result || 'https://rsshub.app';
 
 /**
  * @author idealclover
@@ -65,6 +60,11 @@ function searchRSSHub(url, callback) {
     callback(feeds);
 }
 
+/**
+ * @author idealclover
+ * @param {string} url the url needs to be compared
+ * @param {function} callback giveback the rss list found in Original Website
+ */
 function searchOriginRSS(url, callback) {
     var x = new XMLHttpRequest();
     x.open('GET', url);
@@ -94,7 +94,7 @@ function searchOriginRSS(url, callback) {
             if (links[i].hasAttribute('type') && types.indexOf(links[i].getAttribute('type')) !== -1) {
                 var feed_url = links[i].getAttribute('href');
 
-                console.log(feed_url);
+                //console.log(feed_url);
 
                 // If feed's url starts with "//"
                 if (feed_url.indexOf("//") === 0)
@@ -128,12 +128,18 @@ function searchOriginRSS(url, callback) {
 }
 
 /**
- * Prints message in #feeds
+* Prints message in #feeds
+* @author idealclover
+* @param {string} msg messages should render to div
  */
 function render(msg) {
     document.getElementById('feeds').innerHTML = msg;
 }
 
+/**
+ * add feeds to html
+ * @author idealclover
+ */
 function addFeeds(feeds, html, count, callback) {
     for (var i = 0; i < feeds.length; i++) {
         html += '<li><a href="' + feeds[i].url + '" title="' + feeds[i].type + '" target="_blank">' + feeds[i].title + '</a></li>';
@@ -156,13 +162,13 @@ function addFeeds(feeds, html, count, callback) {
 window.onload = function(){
     var list = document.getElementById("feeds");
     list.addEventListener("click",function(event){
-        console.log(event.target.nodeName);
+        //console.log(event.target.nodeName);
         if(event.target.nodeName !== "A"){
             return;
         }
         const input = document.createElement('input');
         document.body.appendChild(input);
-        console.log(event.target.href);
+        //console.log(event.target.href);
         input.setAttribute('value', event.target.href);
         input.select();
         document.execCommand("copy");
@@ -183,6 +189,7 @@ document.addEventListener('DOMContentLoaded', function () {
             addFeeds(feeds, html, count, function (n_count, n_html) {
                 count = n_count;
                 html = n_html;
+                //console.log("rsshub rss search finished");
             });
         });
 
@@ -191,6 +198,7 @@ document.addEventListener('DOMContentLoaded', function () {
             addFeeds(feeds, html, count, function (n_count, n_html) {
                 count = n_count;
                 html = n_html;
+                //console.log("origin rss search finished");
             });
         });
     });
