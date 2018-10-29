@@ -58,7 +58,7 @@ Example website: http://news.cctv.com/tech/index.shtml
 
 ### Firefox
 
-** Firefox addons **
+**Firefox addons**
 
 [点击下载安装](https://addons.mozilla.org/zh-CN/firefox/addon/easy-to-rss/)
 

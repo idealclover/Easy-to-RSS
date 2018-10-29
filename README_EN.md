@@ -49,7 +49,7 @@ or to search *easy to RSS* in [chrome extension store](https://chrome.google.com
 
 ### Firefox
 
-** Firefox addons **
+**Firefox addons**
 
 [install](https://addons.mozilla.org/zh-CN/firefox/addon/easy-to-rss/)
 
