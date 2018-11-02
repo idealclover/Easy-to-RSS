@@ -2,7 +2,7 @@
 
 > 🚀 RSS IS EASY!
 
-Easy-to-RSS 是一个一键式发现当前网页RSS的 chrome extension，~~计划~~与[RSSHub](https://github.com/DIYgod/RSSHub)联动并支持更多网页。
+Easy-to-RSS 是一个一键式发现当前网页RSS的 chrome/firefox extension，~~计划~~与[RSSHub](https://github.com/DIYgod/RSSHub)联动并支持更多网页。
 
 [English Docs](https://github.com/idealclover/Easy-to-RSS/blob/master/README_EN.md)
 
@@ -39,6 +39,8 @@ Example website: http://news.cctv.com/tech/index.shtml
 
 > 项目还出于demo开发阶段，especially 对RSSHub的支持还有bug ，请给 ~~没学过web开发并且学业繁忙甚至不是计算机专业的~~ 作者一点时间！
 
+### Chrome
+
 **Chrome store**
 
 [点击下载安装（需翻墙）](https://chrome.google.com/webstore/detail/easy-to-rss/hbcmpkcpbnecinpngdnfbnknfkdpdfli)
@@ -54,7 +56,13 @@ Example website: http://news.cctv.com/tech/index.shtml
 3. 将下载的.crx文件拖入浏览器，提示安装并点击确定
 4. Finished! 开启轻松的RSS之旅吧！
 
-**Examples:**
+### Firefox
+
+**Firefox addons**
+
+[点击下载安装](https://addons.mozilla.org/zh-CN/firefox/addon/easy-to-rss/)
+
+### Examples
 
 > Tips: Github语法不支持在新标签页打开链接，建议以下示例链接使用 **ctrl**  + click 的方式，在新标签页内打开链接
 

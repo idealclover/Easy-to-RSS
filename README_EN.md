@@ -2,7 +2,7 @@
 
 > 🚀 RSS IS EASY!
 
-Easy-to-RSS is an one-click chrome extension to find the RSS of the active tab. This project is related with [RSSHub](https://github.com/DIYgod/RSSHub) so that it can support more websites.
+Easy-to-RSS is an one-click chrome/firefox extension to find the RSS of the active tab. This project is related with [RSSHub](https://github.com/DIYgod/RSSHub) so that it can support more websites.
 
 ## Demo
 
@@ -30,7 +30,7 @@ More Chinese websites, see [Chinese docs](https://github.com/idealclover/Easy-to
 
 ## How to Use
 
-> This project is a demo and has bugs. Developing...
+### Chrome
 
 **Chrome store**
 
@@ -47,7 +47,13 @@ or to search *easy to RSS* in [chrome extension store](https://chrome.google.com
 3. Drag the download .crx into chrome, and click to install
 4. Finished!
 
-**Examples:**
+### Firefox
+
+**Firefox addons**
+
+[install](https://addons.mozilla.org/zh-CN/firefox/addon/easy-to-rss/)
+
+### Examples
 
 > Tips: open link in new tab is not supported in Github mark-down. It is  recommended to use **ctrl** + click to open the following links in new tab.
 
