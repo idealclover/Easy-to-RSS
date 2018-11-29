@@ -2,7 +2,7 @@
     "manifest_version": 2,
     "name": "Easy to RSS",
     "description": "Retreive RSS feeds URLs from WebSite, RSSHub supported",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "author": "@idealclover",
     "homepage_url": "https://github.com/idealclover/Easy-to-RSS",
     "permissions": [
