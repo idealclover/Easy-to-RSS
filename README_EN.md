@@ -22,8 +22,8 @@ Example website: https://twitter.com/idealclover
 
 Now this project support following [RSSHub](https://github.com/DIYgod/RSSHub) websites:
 
-* Instagram：fully supported (NOT synchronized to Release)
-* twitter：fully supported (NOT synchronized to Release)
+* Instagram：fully supported
+* twitter：fully supported
 * GitHub: issues
 
 More Chinese websites, see [Chinese docs](https://github.com/idealclover/Easy-to-RSS).
