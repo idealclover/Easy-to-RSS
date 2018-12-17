@@ -1,12 +1,12 @@
 function getRootURL(){
     return new Promise((resolve, reject) => {
-        chrome.storage.local.get({"serveraddress": 'https://rsshub.app'}, function(rst) {
-            root = rst["serveraddress"];
+        chrome.storage.local.get({'serveraddress': 'https://rsshub.app'}, function(rst) {
+            let root = rst['serveraddress'];
             if(root === '') root = 'https://rsshub.app';
-            else if(root.indexOf("http") === -1) root = 'http://' + root;
+            else if(root.indexOf('http') === -1) root = 'http://' + root;
             resolve(root);
         });
-    })
+    });
 }
 
 /**
@@ -34,7 +34,7 @@ function searchRSSHub(root, url, feeds) {
                 // Because for muti url, router-recognizer only return 1 best, the RouteRecognizer should be init in every loop.
                 router = new RouteRecognizer();
                 // The handler contains the rest information for the rest process.
-                router.add([{path: data[key][j]["src"], handler: [data[key][j]["dst"], data[key][j]["name"]]}]);
+                router.add([{path: data[key][j]['src'], handler: [data[key][j]['dst'], data[key][j]['name']]}]);
                 var result = router.recognize(path);
                 if (result) {
                     results.push(result[0]);
@@ -75,8 +75,8 @@ function searchRSSHub(root, url, feeds) {
 function searchOriginRSS(root, url, feeds) {
     return new Promise((resolve,reject) => {
         chrome.tabs.query({active: true, currentWindow: true}, function (tabs) {
-            chrome.tabs.sendMessage(tabs[0].id, {text: 'searchRSS'}, (feeds) => resolve(feeds));
-        })
+            chrome.tabs.sendMessage(tabs[0].id, {text: 'searchRSS', url: url}, (feeds) => resolve(feeds));
+        });
     });
 }
 
@@ -94,32 +94,32 @@ function render(msg) {
  * @author idealclover
  */
 function addFeeds(feeds) {
-    html = ''
+    let html = '';
     for (var i = 0; i < feeds.length; i++) {
         html += '<li><a href="' + feeds[i].url + '" title="' + feeds[i].type + '" target="_blank">' + feeds[i].title + '</a></li>';
     }
     if (html === '') {
-        render("No feeds found");
+        render('No feeds found');
     } else {
         render('<ul id="feeds">' + html + '</ul>');
     }
 }
 
 window.onload = function(){
-    var list = document.getElementById("feeds");
-    list.addEventListener("click",function(event){
-        if(event.target.nodeName !== "A"){
+    var list = document.getElementById('feeds');
+    list.addEventListener('click',function(event){
+        if(event.target.nodeName !== 'A'){
             return;
         }
         const input = document.createElement('input');
         document.body.appendChild(input);
         input.setAttribute('value', event.target.href);
         input.select();
-        document.execCommand("copy");
+        document.execCommand('copy');
         document.body.removeChild(input);
-        alert("Copied to clipboard.");
+        alert('Copied to clipboard.');
     });
-}
+};
 
 document.addEventListener('DOMContentLoaded', function () {
     chrome.tabs.query({active: true, currentWindow: true}, function (tabs) {

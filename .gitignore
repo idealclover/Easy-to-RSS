@@ -1,5 +1,5 @@
-# popup.js back file
-js/popup.bak.js
+# npm modules
+node_modules/
 
 # personal configuration file
 .idea/

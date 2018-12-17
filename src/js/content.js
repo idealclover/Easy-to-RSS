@@ -1,6 +1,6 @@
 chrome.runtime.onMessage.addListener(function (msg, sender, sendResponse) {
     if (msg.text === 'searchRSS') {
-        var types = [
+        let types = [
             'application/rss+xml',
             'application/atom+xml',
             'application/rdf+xml',
@@ -14,25 +14,22 @@ chrome.runtime.onMessage.addListener(function (msg, sender, sendResponse) {
             'text/atom',
             'text/rdf'
         ];
-        links = document.querySelectorAll('link[type]')
-        feeds = [];
-        for (var i = 0; i < links.length; i++) {
+        let links = document.querySelectorAll('link[type]');
+        let feeds = [];
+        for (let i = 0; i < links.length; i++) {
             if (links[i].hasAttribute('type') && types.indexOf(links[i].getAttribute('type')) !== -1) {
-                var feed_url = links[i].getAttribute('href');
+                let feed_url = links[i].getAttribute('href');
 
                 // If feed's url starts with "//"
-                if (feed_url.indexOf("//") === 0)
-                    feed_url = "http:" + feed_url;
+                if (feed_url.indexOf('//') === 0)
+                    feed_url = 'http:' + feed_url;
                 // If feed's url starts with "/"
                 else if (feed_url.startsWith('/'))
-                    feed_url = url.split('/')[0] + '//' + url.split('/')[2] + feed_url;
-                // If feed's url starts with http or https
-                else if (/^(http|https):\/\//i.test(feed_url))
-                    feed_url = feed_url;
-                else
-                    feed_url = url + "/" + feed_url.replace(/^\//g, '');
+                    feed_url = msg.url.split('/')[0] + '//' + msg.url.split('/')[2] + feed_url;
+                else if (!(/^(http|https):\/\//i.test(feed_url)))
+                    feed_url = msg.url + '/' + feed_url.replace(/^\//g, '');
 
-                var feed = {
+                let feed = {
                     type: links[i].getAttribute('type'),
                     url: feed_url,
                     title: 'Origin: ' + (links[i].getAttribute('title') || feed_url)
