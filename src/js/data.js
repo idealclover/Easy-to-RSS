@@ -189,5 +189,19 @@ var data = {
             'src': '/:user',
             'dst': '/instagram/user/:user'
         }
+    ],
+
+    //youtube
+    'www.youtube.com': [
+        {
+            'name': 'youtube用户动态',
+            'src': '/user/:id',
+            'dst': '/youtube/user/:id'
+        },
+        {
+            'name': 'youtube频道动态',
+            'src': '/channel/:id',
+            'dst': '/youtube/channel/:id'
+        }
     ]
 };

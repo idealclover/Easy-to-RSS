@@ -34,6 +34,7 @@ Example website: http://news.cctv.com/tech/index.shtml
 * 微信公众号（瓦斯方式）：完全支持
 * Instagram：完全支持
 * twitter：完全支持
+* Youtube: 完全支持
 
 ## How to Use
 
@@ -78,6 +79,7 @@ Example website: http://news.cctv.com/tech/index.shtml
 * 微信公众号（瓦斯方式）：[公众号](https://wx.qnmlgb.tech/authors/5b575ec958e5c4583338dff7)
 * Instagram: [用户动态](https://www.instagram.com/snatti89/)
 * Twitter: [用户动态](https://twitter.com/idealclover)
+* Youtube: [用户动态](https://www.youtube.com/user/crashcourse) [频道动态](https://www.youtube.com/channel/UCX6b17PVsYBQ0ip5gyeme-Q)
 
 **此外**，还有这样一些良心的网站自己提供了RSS，也可以尝试~
 
