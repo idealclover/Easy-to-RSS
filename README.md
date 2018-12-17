@@ -76,6 +76,8 @@ Example website: http://news.cctv.com/tech/index.shtml
 * Github: [Issues](https://github.com/idealclover/Easy-to-RSS/issues)
 * 即刻：[主题精选](https://web.okjike.com/topic/564ab85208987312006e13ab/official) [用户动态](https://web.okjike.com/user/82D23B32-CF36-4C59-AD6F-D05E3552CBF3)
 * 微信公众号（瓦斯方式）：[公众号](https://wx.qnmlgb.tech/authors/5b575ec958e5c4583338dff7)
+* Instagram: [用户动态](https://www.instagram.com/snatti89/)
+* Twitter: [用户动态](https://twitter.com/idealclover)
 
 **此外**，还有这样一些良心的网站自己提供了RSS，也可以尝试~
 

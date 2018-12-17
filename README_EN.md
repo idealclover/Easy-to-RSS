@@ -60,6 +60,8 @@ or to search *easy to RSS* in [chrome extension store](https://chrome.google.com
 The following example is provided by **RSSHub**:
 
 * Github: [Issues](https://github.com/idealclover/Easy-to-RSS/issues)
+* Instagram: [User](https://www.instagram.com/snatti89/)
+* Twitter: [User](https://twitter.com/idealclover)
 
 More Chinese websites, see [Chinese docs](https://github.com/idealclover/Easy-to-RSS).
 
