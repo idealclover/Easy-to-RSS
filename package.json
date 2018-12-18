@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "format": "eslint src/js/*.js --fix"
+  },
+  "dependencies": {
+    "eslint": "^5.10.0"
+  }
+}

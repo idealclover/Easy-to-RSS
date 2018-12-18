@@ -24,6 +24,7 @@ Now this project support following [RSSHub](https://github.com/DIYgod/RSSHub) we
 
 * Instagram：fully supported
 * twitter：fully supported
+* Youtube: fully supported
 * GitHub: issues
 
 More Chinese websites, see [Chinese docs](https://github.com/idealclover/Easy-to-RSS).
@@ -60,6 +61,9 @@ or to search *easy to RSS* in [chrome extension store](https://chrome.google.com
 The following example is provided by **RSSHub**:
 
 * Github: [Issues](https://github.com/idealclover/Easy-to-RSS/issues)
+* Instagram: [User](https://www.instagram.com/snatti89/)
+* Twitter: [User](https://twitter.com/idealclover)
+* Youtube: [User](https://www.youtube.com/user/crashcourse) [Channel](https://www.youtube.com/channel/UCX6b17PVsYBQ0ip5gyeme-Q)
 
 More Chinese websites, see [Chinese docs](https://github.com/idealclover/Easy-to-RSS).
 
