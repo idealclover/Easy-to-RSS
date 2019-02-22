@@ -154,6 +154,11 @@ var data = {
             'name': '博主动态RSS',
             'src': '/u/:uid',
             'dst': '/weibo/user/:uid'
+        },
+        {
+            'name': '博主动态RSS',
+            'src': '/u/:uid',
+            'dst': '/weibo/user2/:uid'
         }
     ],
     's.weibo.com': [
